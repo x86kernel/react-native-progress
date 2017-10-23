@@ -177,15 +177,7 @@ export class ProgressCircle extends Component {
               justifyContent: 'center',
             }}
           >
-            <Text
-              style={[{
-                color,
-                fontSize: textSize / 4.5,
-                fontWeight: '300',
-              }, textStyle]}
-            >
-              {formatText(progressValue)}
-            </Text>
+            {formatText(progressValue)}
           </View>
         ) : false}
         {children}
